@@ -35,12 +35,30 @@ Run:
 ### Questions
 
 1.  Which processes are running as `root`?
-2.  Why can processes running as root be dangerous?
-3.  What could happen if a malicious program ran with root privileges?
-
-### Reflection
-
-What did you learn about system processes and security?
+   Process with root in the first column are running as root:
+systemd
+kthreadd
+cron 
+sshd
+NetworkManager
+   3. Why can processes running as root be dangerous?
+  Root processes have full control over the system because there are several reason: 
+ a.Access all files
+b.Change system settings
+c.Install or remove software
+d.Create or delete user accounts
+If a root process is compromised, an attacker could gain complete control of the system.
+4. What could happen if a malicious program ran with root privileges?
+A malicious program running as root could:
+a.Steal sensitive data
+b.Delete important files
+c.Install malware
+d.Create backdoor accounts
+e.Disable security features
+f.Take complete control of the computer
+  ### Reflection
+  what did you learn about system processes and security?
+I learned that system processes keep the operating system running and many of them require special permissions. Processes running as root have powerful privileges, so it is important to monitor them and follow the principle of least privilege. Limiting root access helps improve system security and reduces the risk of attacks.
 
 ------------------------------------------------------------------------
 
