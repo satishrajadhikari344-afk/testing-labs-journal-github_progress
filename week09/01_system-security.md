@@ -13,12 +13,28 @@ Run:
 ### Questions
 
 1.  How many users exist on the system?
-2.  Which accounts appear to be system accounts?
-3.  Why do operating systems create system accounts?
+There are 35 users on the system.
+3.  Which accounts appear to be system accounts?
+   root
+   daemon
+   bin
+   sys
+   nobody
+   www-data
+   systemd-network
+   systmed-timesys
+   
+5.  Why do operating systems create system accounts?
+   Operating systems create system accounts do :
+Run background services securely
+Seperate permissions between services
+Protect the system from unauthorized access
+Manage system processes automatically
 
 ### Reflection
 
 Explain why understanding system users is important for cybersecurity.
+Understanding system users is important for cybersecurity because it helps identityfy who can access the system and what permissions thry have. System accounts allow services to run safely with limited acess, reducing security risks. Monitoring user accounts also helps detect unauthorized access and protect sensitive data.
 
 ------------------------------------------------------------------------
 
